@@ -63,116 +63,12 @@
 
 ---
 
-## 📁 Project Structure
-
-```
-Skilledboys/
-├── frontend/
-│   ├── index.html              # Landing/home page
-│   ├── landing.html            # Customer landing page
-│   ├── login.html              # Customer login
-│   ├── register.html           # Customer registration
-│   ├── worker-login.html       # Worker login
-│   ├── worker-register.html    # Worker registration
-│   ├── worker-dashboard.html   # Worker dashboard
-│   ├── category.html           # Browse workers by category
-│   ├── area.html               # Browse workers by location
-│   ├── result.html             # Search results
-│   ├── results.html            # Alternative results page
-│   ├── about.html              # About us
-│   ├── contact.html            # Contact/support
-│   ├── css/
-│   │   └── style.css           # Custom styles
-│   ├── js/
-│   │   └── script.js           # Main JavaScript
-│   └── images/                 # Image assets
-├── backend/
-│   ├── server.js               # Main server file
-│   ├── package.json            # Dependencies & scripts
-│   ├── add-sample-data.js      # Sample data insertion
-│   ├── check-db.js             # Database verification
-│   ├── list-all-workers.js     # Worker listing utility
-│   └── test-search.js          # Search functionality test
-├── .gitignore                  # Git ignore rules
-└── README.md                   # This file
-```
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
 - **Node.js** (v14 or higher)
 - **npm** or **yarn**
 - **MongoDB** (local or cloud like MongoDB Atlas)
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/manishverma0507/SkilledBoys.git
-   cd SkilledBoys
-   ```
-
-2. **Install Backend Dependencies:**
-   ```bash
-   cd backend
-   npm install
-   ```
-
-3. **Configure Environment Variables:**
-   Create a `.env` file in the `backend/` directory:
-   ```
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/skilledboys
-   JWT_SECRET=your_jwt_secret_key
-   NODE_ENV=development
-   ```
-
-4. **Start MongoDB:**
-   ```bash
-   mongod
-   ```
-
-5. **Run the Backend Server:**
-   ```bash
-   npm start
-   ```
-   Server will run on `http://localhost:5000`
-
-6. **Open Frontend:**
-   - Navigate to `frontend/index.html` in your browser
-   - Or use a local server: `python -m http.server 8000` (then visit `http://localhost:8000/frontend/`)
-
----
-
-## 📝 Available Scripts
-
-### Backend Scripts
-
-```bash
-# Start the server
-npm start
-
-# Run tests (configure as needed)
-npm test
-```
-
-### Utility Scripts
-
-```bash
-# Add sample data to database
-node add-sample-data.js
-
-# Check database connection
-node check-db.js
-
-# List all workers
-node list-all-workers.js
-
-# Test search functionality
-node test-search.js
-```
 
 ---
 
@@ -210,18 +106,6 @@ POST   /api/bookings            - Create booking
 GET    /api/bookings/:id        - Get booking details
 POST   /api/reviews             - Submit review/rating
 ```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
